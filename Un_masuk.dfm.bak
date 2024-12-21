@@ -1,0 +1,1232 @@
+object Frm_masuk: TFrm_masuk
+  Left = 228
+  Top = 131
+  Width = 1180
+  Height = 574
+  Caption = 'Frm_masuk'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl1: TPanel
+    Left = 3
+    Top = -1
+    Width = 766
+    Height = 119
+    TabOrder = 0
+    object SpeedButton2: TSpeedButton
+      Left = 288
+      Top = 8
+      Width = 81
+      Height = 19
+      Caption = 'Nomor Baru'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C64B89CFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FF64B89C98EECA98EECA64B89CFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C9CF1CD60E3A560E3A59C
+        F1CD64B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        64B89CA1F3D166E8AB66E8AB66E8AB66E8ABA1F3D164B89CFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C6DEDB26DEDB264B89C64B89C6D
+        EDB26DEDB2A7F6D564B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF64B89C64B89CFB00FFFB00FF64B89C73F3B973F3B9ABF9D964B89CFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FF64B89C79F8BF79F8BFB0FBDD64B89CFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C7EFCC47EFCC4B3FD
+        E064B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FF64B89C81FFC881FFC864B89CFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C64B8
+        9CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+      Visible = False
+      OnClick = SpeedButton2Click
+    end
+    object lbl_cv: TLabel
+      Left = 243
+      Top = 83
+      Width = 56
+      Height = 20
+      Caption = 'nm pbf'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 640
+      Top = 59
+      Width = 31
+      Height = 20
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        1800000000000003000000000000000000000000000000000000EEEDEDCBCACA
+        7674734745442623211F1E236A60505E3B0C70593A333640302D2D63605F8583
+        83BBB9B9E2E1E1FFFFFF61605D55535135312F3834323C3634272B38FFEEC6EB
+        8B00FFEA9A6D758725201B383432332F2D2E2A29363332FFFFFF6865647E7976
+        3E383639353336302E3B3D43FDEFD4D4901DFFF9D463666C241E1B3E38363E39
+        373F3D39373533FFFFFF6F6D6C7A76745C5654373330322C2A575355FFFFFCE4
+        AF55FFFFFA807F84272221403B39423D3B3A3734565453FFFFFFBFBEBD635F5F
+        9A9696352F2F2A2524706E71FFFFFFEBC170FFFFFF969396211A1A45403F4944
+        43302B2ABEBDBDFFFFFFFFFFFFC0C0BF7A75767F7B7A7D7978FFFFFFFFECC2FF
+        CE56FFF4BEF5F8FF989392322A29433E3D82807FFFFFFFFFFFFFFFFFFFFFFFFF
+        A9A7A6736F6DFFFFFFFDFEFFCAD8F6A4BBD5BACFEDFFFFFFFFFFFF50494A6360
+        5EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3CFCE8085957BC3FF198AF00A
+        87FD0281F455A9FD9B939DA19D93FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFF5397EE4CBFFF2BA6FC3AAAFA3AABFA27AEFF4D76B2FFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF86D0FF49B9F93AB0F83E
+        B3FA40B3F947C3FF37A1F2DDE3F6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFE4E9F5ACEFFF8CE8FF74D0FF5BC4FB56C3FA59CEFF4FAFE9CBD2E3FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEAE7E4667B8174B8D995E7FF9A
+        E8FF8BD5FC9AF4FF84C6CFB0A9A3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFE8E8E83024212D1B1334303199EAF2B6FFFFA7FDFF4A585D9E9A97FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0EFEF413D3B423C3A301F1B5D
+        7270719798464D4C2E1E1AA6A4A3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFF5C575547423F4641403C3230352725392C2A413C3BD4D3D2FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4F3F3655F5E4D46455A
+        5352807B7B676463C6C4C4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+    end
+    object SpeedButton5: TSpeedButton
+      Left = 323
+      Top = 54
+      Width = 31
+      Height = 21
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFB8A164B8A164B8A164B8A164B8A164B8A164B8A164FB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFB8A164EFD49AEFD49AEFD49AEF
+        D49AEFD49AEFD49AEFD49AB8A164FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        B8A164EFD49AEAC578EAC578EAC578EAC578EAC578EAC578EAC578EFD49AB8A1
+        64FB00FFFB00FFFB00FFFB00FFFB00FFB8A164F1CE7AF1CE7AF1CE7AF1CE7AC7
+        B58CF1CE7AF1CE7AF1CE7AF1CE7AB8A164FB00FFFB00FFFB00FFFB00FFFB00FF
+        B8A164F9DA7BF9DA7BF9DA7BCBBB8CEDEDEDCBBB8CF9DA7BF9DA7BF9DA7BB8A1
+        64FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFB8A164FFE27CCEBF8DFFFFFFFF
+        FFFFFFFFFFCEBF8DFFE27CB8A164FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFB8A164A7B1B4A7B1B4A7B1B4A7B1B4A7B1B4B8A164FB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFA7B1B4A7B1B4D6EDEFD6
+        EDEFD6EDEFA7B1B4A7B1B4FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFA7B1B4D5EDEFD5EDEFD5EDEFD5EDEFD5EDEFA7B1B4FB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF81A2A69FC3C69FC3C6E3
+        F3F49FC3C69FC3C681A2A6FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FF81A2A69BE2EDA7C6C9A7C6C9A7C6C99BE2ED81A2A6FB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF81A2A681A2A69BE2ED9B
+        E2ED9BE2ED81A2A681A2A6FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FF81A2A681A2A681A2A681A2A681A2A6FB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+    end
+    object cxlbl1: TcxLabel
+      Left = 18
+      Top = 4
+      Caption = 'No. Transaksi'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.IsFontAssigned = True
+    end
+    object btnnoreg: TcxButtonEdit
+      Left = 121
+      Top = 3
+      ParentFont = False
+      Properties.Buttons = <
+        item
+          Default = True
+          Kind = bkEllipsis
+        end>
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 1
+      Width = 168
+    end
+    object cxlbljam: TcxLabel
+      Left = 588
+      Top = 4
+      Caption = '00:00:00'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -16
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = clHotLight
+      Style.IsFontAssigned = True
+    end
+    object cxNoJalan: TcxTextEdit
+      Left = 121
+      Top = 27
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 3
+      Width = 233
+    end
+    object cxlbl6: TcxLabel
+      Left = 61
+      Top = 53
+      Caption = 'Gudang'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = clHotLight
+      Style.IsFontAssigned = True
+    end
+    object cbo_gudang: TcxLookupComboBox
+      Left = 120
+      Top = 52
+      ParentFont = False
+      Properties.ListColumns = <>
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 5
+      Width = 203
+    end
+    object edtotal: TAdvShapeButton
+      Left = 543
+      Top = 25
+      Width = 218
+      Height = 30
+      HelpType = htKeyword
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -37
+      Font.Name = 'Arial Narrow'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 6
+      Version = '6.0.0.3'
+    end
+    object cxlbl8: TcxLabel
+      Left = 541
+      Top = 5
+      Caption = 'Waktu'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.IsFontAssigned = True
+    end
+    object cxLabel1: TcxLabel
+      Left = 52
+      Top = 81
+      Caption = 'CV / PBF'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.IsFontAssigned = True
+    end
+    object btn_cv: TcxButtonEdit
+      Left = 121
+      Top = 80
+      ParentFont = False
+      Properties.Buttons = <
+        item
+          Default = True
+          Kind = bkEllipsis
+        end>
+      Properties.OnButtonClick = cxButtonEdit1PropertiesButtonClick
+      Properties.OnChange = btn_cvPropertiesChange
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 9
+      Width = 119
+    end
+    object cxlbl10: TcxLabel
+      Left = 371
+      Top = 5
+      Caption = 'Tanggal'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = clHotLight
+      Style.IsFontAssigned = True
+    end
+    object cxLabel7: TcxLabel
+      Left = 23
+      Top = 28
+      Caption = 'Nomor Jalan'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.IsFontAssigned = True
+    end
+    object cxLabel9: TcxLabel
+      Left = 358
+      Top = 32
+      Caption = 'Tgl. Jalan'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = clHotLight
+      Style.IsFontAssigned = True
+    end
+    object cxLabel2: TcxLabel
+      Left = 368
+      Top = 56
+      Caption = 'Petugas'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.TextColor = clHotLight
+      Style.IsFontAssigned = True
+    end
+    object cbbpetugas: TcxLookupComboBox
+      Left = 430
+      Top = 57
+      ParentFont = False
+      Properties.ListColumns = <>
+      Properties.ListSource = ds1
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 14
+      Width = 208
+    end
+    object dtp_buat: TDateTimePicker
+      Left = 435
+      Top = 4
+      Width = 104
+      Height = 24
+      Date = 44511.628642106480000000
+      Time = 44511.628642106480000000
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 15
+    end
+    object dtpTglJalan: TDateTimePicker
+      Left = 432
+      Top = 31
+      Width = 108
+      Height = 24
+      Date = 38581.827836585700000000
+      Format = 'dd/MM/yyyy'
+      Time = 38581.827836585700000000
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 16
+    end
+  end
+  object pnl2: TPanel
+    Left = 2
+    Top = 120
+    Width = 767
+    Height = 53
+    Color = clGradientInactiveCaption
+    TabOrder = 1
+    object lbl1: TLabel
+      Left = 4
+      Top = 9
+      Width = 62
+      Height = 13
+      Caption = 'Kode Barang'
+    end
+    object btn1: TSpeedButton
+      Left = 593
+      Top = 31
+      Width = 69
+      Height = 19
+      Hint = 'Baru'
+      Caption = '&Tambah'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FF64B89C64B89CFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C98
+        EEC998EEC964B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FF64B89C5EE1A35EE1A364B89CFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C63
+        E5A863E5A864B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF64B89C64B89C64B89C64B89C67E9AD67E9AD64B89C64B89C64B89C64B8
+        9CFB00FFFB00FFFB00FFFB00FFFB00FF64B89CA7F6D5A7F6D5A7F6D5A7F6D56D
+        EDB26DEDB2A7F6D5A7F6D5A7F6D5A7F6D564B89CFB00FFFB00FFFB00FFFB00FF
+        64B89C72F2B872F2B872F2B872F2B872F2B872F2B872F2B872F2B872F2B872F2
+        B864B89CFB00FFFB00FFFB00FFFB00FFFB00FF64B89C64B89C64B89C64B89C76
+        F6BD76F6BD64B89C64B89C64B89C64B89CFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FF64B89C7BFAC27BFAC264B89CFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C7E
+        FDC57EFDC564B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FF64B89C81FFC881FFC864B89CFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64
+        B89C64B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+      Margin = 0
+      ParentFont = False
+      OnClick = btn1Click
+    end
+    object btn2: TSpeedButton
+      Left = 664
+      Top = 30
+      Width = 62
+      Height = 20
+      Hint = 'Baru'
+      Caption = '&Hapus'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF6464B86464B86464B86464B86464B86464B86464B86464B86464B86464
+        B8FB00FFFB00FFFB00FFFB00FFFB00FF6464B8A7A7F6A7A7F6A7A7F6A7A7F6A7
+        A7F6A7A7F6A7A7F6A7A7F6A7A7F6A7A7F66464B8FB00FFFB00FFFB00FFFB00FF
+        6464B88181FF8181FF8181FF8181FF8181FF8181FF8181FF8181FF8181FF8181
+        FF6464B8FB00FFFB00FFFB00FFFB00FFFB00FF6464B86464B86464B86464B864
+        64B86464B86464B86464B86464B86464B8FB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+      Margin = 0
+      ParentFont = False
+      OnClick = btn2Click
+    end
+    object Label1: TLabel
+      Left = 212
+      Top = 9
+      Width = 33
+      Height = 13
+      Caption = 'Jumlah'
+    end
+    object Label2: TLabel
+      Left = 428
+      Top = 9
+      Width = 27
+      Height = 13
+      Caption = 'harga'
+    end
+    object lbl3: TLabel
+      Left = 721
+      Top = 7
+      Width = 16
+      Height = 13
+      Caption = 'lbl3'
+    end
+    object edkode: TcxButtonEdit
+      Left = 73
+      Top = 4
+      ParentFont = False
+      Properties.Buttons = <
+        item
+          Default = True
+          Kind = bkEllipsis
+        end>
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 0
+      Width = 136
+    end
+    object cbb_satuan: TComboBox
+      Left = 310
+      Top = 4
+      Width = 120
+      Height = 24
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ItemHeight = 16
+      ParentFont = False
+      TabOrder = 1
+    end
+    object cx_nama_brg: TcxTextEdit
+      Left = 72
+      Top = 28
+      ParentFont = False
+      Style.Color = clCream
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 2
+      Width = 361
+    end
+    object cxtotal: TcxTextEdit
+      Left = 464
+      Top = 28
+      Enabled = False
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      StyleDisabled.Color = clHighlightText
+      StyleDisabled.TextColor = clRed
+      TabOrder = 3
+      Width = 105
+    end
+    object edhrg: TEdit
+      Left = 465
+      Top = 5
+      Width = 121
+      Height = 24
+      Color = clMoneyGreen
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      OnChange = edhrgChange
+    end
+    object edjml: TEdit
+      Left = 258
+      Top = 3
+      Width = 49
+      Height = 24
+      Color = clMoneyGreen
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+      OnKeyDown = edjmlKeyDown
+      OnKeyPress = edjmlKeyPress
+    end
+  end
+  object Panel1: TPanel
+    Left = 3
+    Top = 173
+    Width = 774
+    Height = 310
+    Color = clMoneyGreen
+    TabOrder = 2
+    object lbl2: TLabel
+      Left = 519
+      Top = 265
+      Width = 33
+      Height = 13
+      Caption = 'Jml brg'
+    end
+    object edt_jml_barang: TEdit
+      Left = 570
+      Top = 263
+      Width = 48
+      Height = 21
+      Color = clAqua
+      TabOrder = 0
+      Text = '0'
+      OnChange = edt_jml_barangChange
+    end
+    object grid1: TAdvStringGrid
+      Left = 3
+      Top = 2
+      Width = 766
+      Height = 255
+      Cursor = crDefault
+      ColCount = 7
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ScrollBars = ssBoth
+      TabOrder = 1
+      OnSelectCell = grid1SelectCell
+      HoverRowCells = [hcNormal, hcSelected]
+      OnGetCellColor = grid1GetCellColor
+      OnGetAlignment = grid1GetAlignment
+      OnGetFloatFormat = grid1GetFloatFormat
+      ActiveCellFont.Charset = DEFAULT_CHARSET
+      ActiveCellFont.Color = clWindowText
+      ActiveCellFont.Height = -11
+      ActiveCellFont.Name = 'Tahoma'
+      ActiveCellFont.Style = [fsBold]
+      ControlLook.FixedGradientHoverFrom = clGray
+      ControlLook.FixedGradientHoverTo = clWhite
+      ControlLook.FixedGradientDownFrom = clGray
+      ControlLook.FixedGradientDownTo = clSilver
+      ControlLook.DropDownHeader.Font.Charset = DEFAULT_CHARSET
+      ControlLook.DropDownHeader.Font.Color = clWindowText
+      ControlLook.DropDownHeader.Font.Height = -11
+      ControlLook.DropDownHeader.Font.Name = 'Tahoma'
+      ControlLook.DropDownHeader.Font.Style = []
+      ControlLook.DropDownHeader.Visible = True
+      ControlLook.DropDownHeader.Buttons = <>
+      ControlLook.DropDownFooter.Font.Charset = DEFAULT_CHARSET
+      ControlLook.DropDownFooter.Font.Color = clWindowText
+      ControlLook.DropDownFooter.Font.Height = -11
+      ControlLook.DropDownFooter.Font.Name = 'MS Sans Serif'
+      ControlLook.DropDownFooter.Font.Style = []
+      ControlLook.DropDownFooter.Visible = True
+      ControlLook.DropDownFooter.Buttons = <>
+      Filter = <>
+      FilterDropDown.Font.Charset = DEFAULT_CHARSET
+      FilterDropDown.Font.Color = clWindowText
+      FilterDropDown.Font.Height = -11
+      FilterDropDown.Font.Name = 'MS Sans Serif'
+      FilterDropDown.Font.Style = []
+      FilterDropDownClear = '(All)'
+      FilterEdit.TypeNames.Strings = (
+        'Starts with'
+        'Ends with'
+        'Contains'
+        'Not contains'
+        'Equal'
+        'Not equal'
+        'Clear')
+      FixedRowHeight = 22
+      FixedFont.Charset = DEFAULT_CHARSET
+      FixedFont.Color = clWindowText
+      FixedFont.Height = -11
+      FixedFont.Name = 'Tahoma'
+      FixedFont.Style = [fsBold]
+      FloatFormat = '%.2f'
+      HoverButtons.Buttons = <>
+      HoverButtons.Position = hbLeftFromColumnLeft
+      PrintSettings.DateFormat = 'dd/mm/yyyy'
+      PrintSettings.Font.Charset = DEFAULT_CHARSET
+      PrintSettings.Font.Color = clWindowText
+      PrintSettings.Font.Height = -11
+      PrintSettings.Font.Name = 'MS Sans Serif'
+      PrintSettings.Font.Style = []
+      PrintSettings.FixedFont.Charset = DEFAULT_CHARSET
+      PrintSettings.FixedFont.Color = clWindowText
+      PrintSettings.FixedFont.Height = -11
+      PrintSettings.FixedFont.Name = 'MS Sans Serif'
+      PrintSettings.FixedFont.Style = []
+      PrintSettings.HeaderFont.Charset = DEFAULT_CHARSET
+      PrintSettings.HeaderFont.Color = clWindowText
+      PrintSettings.HeaderFont.Height = -11
+      PrintSettings.HeaderFont.Name = 'MS Sans Serif'
+      PrintSettings.HeaderFont.Style = []
+      PrintSettings.FooterFont.Charset = DEFAULT_CHARSET
+      PrintSettings.FooterFont.Color = clWindowText
+      PrintSettings.FooterFont.Height = -11
+      PrintSettings.FooterFont.Name = 'MS Sans Serif'
+      PrintSettings.FooterFont.Style = []
+      PrintSettings.PageNumSep = '/'
+      SearchFooter.FindNextCaption = 'Find &next'
+      SearchFooter.FindPrevCaption = 'Find &previous'
+      SearchFooter.Font.Charset = DEFAULT_CHARSET
+      SearchFooter.Font.Color = clWindowText
+      SearchFooter.Font.Height = -11
+      SearchFooter.Font.Name = 'MS Sans Serif'
+      SearchFooter.Font.Style = []
+      SearchFooter.HighLightCaption = 'Highlight'
+      SearchFooter.HintClose = 'Close'
+      SearchFooter.HintFindNext = 'Find next occurence'
+      SearchFooter.HintFindPrev = 'Find previous occurence'
+      SearchFooter.HintHighlight = 'Highlight occurences'
+      SearchFooter.MatchCaseCaption = 'Match case'
+      SortSettings.DefaultFormat = ssAutomatic
+      Version = '7.4.6.4'
+      RowHeights = (
+        22
+        22
+        22
+        22
+        22
+        22
+        22
+        22
+        22
+        22)
+      object pnl4: TPanel
+        Left = 0
+        Top = 16
+        Width = 761
+        Height = 257
+        Caption = 'pnl4'
+        Color = clWhite
+        TabOrder = 1
+        Visible = False
+        object lv1: TListView
+          Left = 0
+          Top = 19
+          Width = 753
+          Height = 206
+          Color = clInactiveBorder
+          Columns = <
+            item
+              Caption = 'Kode'
+              Width = 120
+            end
+            item
+              AutoSize = True
+              Caption = 'Nama Barang'
+              MaxWidth = 430
+            end
+            item
+              Caption = 'Satuan'
+              Width = 90
+            end
+            item
+              Caption = 'Stok'
+              Width = 110
+            end>
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -21
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          GridLines = True
+          ReadOnly = True
+          RowSelect = True
+          ParentFont = False
+          TabOrder = 0
+          ViewStyle = vsReport
+          OnCustomDrawItem = lv1CustomDrawItem
+          OnKeyDown = lv1KeyDown
+          OnKeyPress = lv1KeyPress
+        end
+        object cxLabel4: TcxLabel
+          Left = 8
+          Top = 226
+          Caption = 'Jumlah Barang'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clRed
+          Style.Font.Height = -13
+          Style.Font.Name = 'MS Sans Serif'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxLabel5: TcxLabel
+          Left = 556
+          Top = 226
+          Caption = 'Enter : Pilih , Esc : Keluar '
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clRed
+          Style.Font.Height = -13
+          Style.Font.Name = 'MS Sans Serif'
+          Style.Font.Style = [fsBold]
+          Style.TextColor = clRed
+          Style.TextStyle = [fsBold, fsItalic]
+          Style.IsFontAssigned = True
+        end
+        object cxLabel6: TcxLabel
+          Left = 192
+          Top = -1
+          Caption = 'Data Pencarian : Barang'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clBlue
+          Style.Font.Height = -13
+          Style.Font.Name = 'MS Sans Serif'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+      end
+    end
+    object ed2: TcxTextEdit
+      Left = 144
+      Top = 286
+      Properties.OnChange = ed2PropertiesChange
+      TabOrder = 2
+      Visible = False
+      Width = 266
+    end
+    object chk1: TCheckBox
+      Left = 16
+      Top = 289
+      Width = 121
+      Height = 17
+      Caption = 'Pencarian Grid kolom'
+      TabOrder = 3
+      OnClick = chk1Click
+    end
+    object cxLabel3: TcxLabel
+      Left = 55
+      Top = 263
+      Caption = 'Cari Barang'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clRed
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = [fsBold]
+      Style.IsFontAssigned = True
+    end
+    object cxcari: TcxTextEdit
+      Left = 146
+      Top = 262
+      ParentFont = False
+      Style.BorderColor = clGradientInactiveCaption
+      Style.Color = clGradientInactiveCaption
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -13
+      Style.Font.Name = 'MS Sans Serif'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 5
+      OnKeyPress = cxcariKeyPress
+      Width = 361
+    end
+  end
+  object grp1: TGroupBox
+    Left = 2
+    Top = 485
+    Width = 775
+    Height = 46
+    Caption = 'Proses data'
+    Color = clGradientActiveCaption
+    ParentColor = False
+    TabOrder = 3
+    object btnBtnBaru: TSpeedButton
+      Left = 3
+      Top = 14
+      Width = 74
+      Height = 29
+      Hint = 'Baru'
+      Caption = '&Baru'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      Glyph.Data = {
+        F6060000424DF606000000000000360000002800000018000000180000000100
+        180000000000C006000000000000000000000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A751C1A751C0B6F0F0B6F0F0B6F
+        0D0B6F0D086B0B086B0BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A751C72D288
+        22C34D22C34D22C24B22C24B1DAC3B086B0BFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFF1A751C6ED08421C04D21BE4C21BE4A21BE4A1CA839086B0BFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFF1A751C6ED18421C04F21C04F21C04D21BE4C1CAA3B08
+        6B0BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A751C6ED08621C25021C24F21C0
+        4F21C04F1CAB3C086B0BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A751C6ED287
+        1EC3531EC25221C25021C24F1CAD3E086B0BFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFF1A751C6FD58C21C55521C3531EC3531EC2521CAF3F086B0BFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFF1A751C5CCB7C1FC6581FC65721C55521C3551BAE4208
+        6B0BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2083291A751C
+        1A751C1A751C1A751C1A751C1A751C1A751C086B0B5CCB7C1FC85B1FC65A1FC6
+        581FC6581BAE42086B0B086B0B086B0B086B0B086B0B086B0B086B0B086B0B08
+        6B0B278D3446CE781BB44D1BB44D1BB44D1BB44D1BB44D1BB44D1BB44D5CCB7C
+        1FC95E1FC95D1FC85B1FC65A1BAE421BAE421BB44D1BB44D1BB44D1BB44D1BB4
+        4D1BB44D1BAE4210801C28903555ED9F18D16D1ED36E1ED16D1ED16B1ED0691E
+        D0681ECE661FCD631FCD621FCB601FC95E1FC95D1FC85B1FC65A1FC6581FC658
+        1FC55721C55521C3531EC35321C04F12831D28933855F0A218D4711CD5731CD5
+        711CD36E1ED16D1ED16B1ED0691ED0681ECE661FCD651FCD621FCB601FC95E1F
+        C95D1FC85B1FC85B1FC6571FC6581FC55721C55521C04F12872029963B53F2A5
+        17D8751CD8761CD6741CD5731CD5711CD36E1ED36D1ED16B1ED0691ED0681ECE
+        661FCE651FCD631FCB601FCB5E1FC95D1FC85D1FC85B1FC65A1FC65821C04F12
+        8B23299B3E4FF4A714DA7717DA7917D87718D77618D47118D57019D46F1BD370
+        1ED36E1ED16B1ED0691ED0681ECE661DCD641CCC611BC95F1BC95D1BC75B1BC6
+        5A1BC6581FC65A128E262B9E416CFFBD4CEFA34EF0A24FEE9F4FEE9E4FED9C51
+        EB9B53E89A18D5701CD5711CD3701ED36E1ED16D1DCF681CCC6154E38F52E38D
+        52E28B52E08952E08852DD8655E28A1E9832249E3C249E3C249E3C249E3C249E
+        3C249E3C249E3C249E3C249E3C6EE5A01CD8761CD6731CD5711CD37019C35E12
+        8C23128C23128C23128C23128C23128C23128C23128C23128C23FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1E98326EE5A01BD9791CD9781CD8
+        761CD67419C35E1E9832FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1E98326DEAA6
+        1BDC7E1BDB7C1BDB7B1BD9781BC8641E9832FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFF1E983270ECA619E08319DE8119DC7E1BDB7C1BCB681E9832FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFF1E983270ECA819E08419E08419E08319DE8119CF6D1E
+        9832FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1E98326FEEAA19E08419E08419E0
+        8419E08419D2731E9832FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1E98326EF0AA
+        12DE7F12DE7F12DE7F12DE7F14D3701E9832FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFF249E3C6EF0AC8AFFCE8AFFCE8AFFCE8AFFCE72F2AF249E3CFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFF249E3C2CBB5331C15731C15731C15731C1572CBB5324
+        9E3CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      Margin = 0
+      ParentFont = False
+      OnClick = btnBtnBaruClick
+    end
+    object btnBtnUbah1: TSpeedButton
+      Left = 78
+      Top = 13
+      Width = 74
+      Height = 29
+      Hint = 'Ubah'
+      Caption = '&Edit'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      Glyph.Data = {
+        F6060000424DF606000000000000360000002800000018000000180000000100
+        180000000000C00600000000000000000000000000000000000018379A0C2F9B
+        5C74C3697DC8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFF0E329F031A7302187106268F256BD294A0D6667BC7FFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFF6C84CB01177100056761BDF17AE2FF4FCAFE1D77DC63
+        83D27184CBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFF0B2F9991CEF2AAEAFF89DC
+        FE71D5FF60D6FF2BB7F90E5FCD97A5D9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF416CCB
+        F0FFFFBCE9FFA2E1FF92DEFF65CDF9076FD60A78DA1072D8607CCEFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFCFD7EF90C3E9DBF5FFC9E9FF33D3FE00B7F81A82DC0E78DA0977DA
+        157FE0607ECEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5181D2FFFFFF8CF0FD01CFF900C5FA03
+        B8F81B83DC0E78DA0975D91482E0627ED0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA5B5E39EE5F300F3
+        F700E7F600C9F800C5FA03B8F81B83DC0E78DA0975D81481E06282D2FFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFF71A3DE3BFFFD05F2F701E7F600CAF800C5FA03B8F81B83DC0E78DA0975
+        D81481E06382D3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFF64AFE13CFFFD05F2F701E7F600CAF800C5FA
+        03B8F81B83DC0E78DA0975D81482E16384D6FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50A2DD3CFFFD05
+        F2F701E7F600CAF800C5FA03B8F81B83DC0E78DA0975D81482E06486D7FFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFF499FDC3CFFFD05F2F701E7F600CAF800C5FA03B8F81B83DC0E78DA09
+        75D81481E06487D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF479FDD3CFFFD05F2F601E7F600CAF800C5
+        FA03B8F81B83DC0E78DA0975D81582E16589D9FFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF499FDE39FEFB
+        04F1F601E7F600CAF800C5FA03B8F81B83DC0E78DA0975D81582E0678EDAFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF4CA1DF34FBFA04F1F601E7F600CAF800C5FA03B8F81B83DC0E78DA
+        0A77D90B71DA6188DCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF58A7E133F9FA04F1F601E7F600CAF800
+        C5FA03B8F81B84DC0E7DE10051B23D5B81648FDDFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5BA9E232F9
+        FA04F1F601E7F600CAF800C6FB02BEFD055DBB4F5C6EFFEAE0F0EAE85B82D4FF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFF59A8E132F9FA04F1F601E8F600CFFE009ADE4E717FFFEEE9FFFE
+        F35D6493000BCC84A3E4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF57A7E132F9FA04F7FC00C2D54F7A87
+        FFF7F3FFFFF95962930001D00512F91238DDFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF63ADE31A
+        D7D6538C8BFFFFFEFFFFFE5B66910000CF0615F70614F20C22EAFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFF9DB5CDFFFFFFFFFFFF6277910023D40920F60613F20611F327
+        48E3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDEECF7768894115CD81B67FC1041
+        F5081DF20C24E9EDF3FBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF478DD8
+        47B9FF2D8BFA1C65F9144AEBE9F0FBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFF3890E8349DEE3678E6EDF2FBFFFFFFFFFFFF}
+      ParentFont = False
+      OnClick = btnBtnUbah1Click
+    end
+    object btnBtnHapus: TSpeedButton
+      Left = 154
+      Top = 13
+      Width = 79
+      Height = 29
+      Hint = 'Hapus'
+      Caption = '&Hapus'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      Glyph.Data = {
+        F6060000424DF606000000000000360000002800000018000000180000000100
+        180000000000C006000000000000000000000000000000000000FFFFFFFFFFFF
+        FFFFFFC8C7FFDCDBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBEBDE90607EE5E5DC4FFFFFFFF
+        FFFFFFFFFFFFFFFF3135FF243CFF1D2EFF4D4BFDFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF100FDD1720
+        FF3534B2FFFFFFFFFFFFFFFFFF615CFF3357FF2E51FF2A4AFF233EFF3734FBFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        716EDC0909FF0B13FF5B5AC2FFFFFFFFFFFFFFFFFF201EFF325BFF2C4FFF2948
+        FF233FFF1628FFA8A5FBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFE0DFF70200EA1414FF0509EFA6A4DEFFFFFFFFFFFFFFFFFF231FFF
+        4E76FF2B4DFF2948FF233DFF203CFF191BFAFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFF2522DE100CFF1414FF0000D0EFEEF9FFFFFFFF
+        FFFFFFFFFF3A36FF7190FF284BFF2847FF233DFF1F3AFF182BFF8380F7FFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5E5ADD0500FF100CFF0708FF4A48
+        BEFFFFFFFFFFFFFFFFFFFFFFFFA6A3FF4248FF5275FF2645FF233DFF1F39FF1D
+        34FF0B10FBF3F2FEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAAA7ED0500FD0F07FF
+        100CFF0200D9CBCAEEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3332FF697AFF3454
+        FF213CFF1F39FF1C32FF1728FF3834F3FFFFFFFFFFFFFFFFFFFFFFFFA7A5EF05
+        00F80F08FF0E07FF0602FF3935BEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFF0400FF7F98FF213DFF1E38FF1C32FF192CFF0C15FF9592F4FFFFFFFFFF
+        FFE1E0FA0601FB0F09FF0E07FF0F08FF0400CECBCAF0FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFCECDFF110EFF7591FF1D38FF1B31FF192BFF1824FF
+        0708F5F8F7FFE4E3FB0702F4110DFF0F09FF0E07FF0500F8716ED7FFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF817FFE2625FD607DFF17
+        2DFF192BFF1825FF131CFF201BEC0E0DFB100FFF110DFF100AFF0C06FF130FC7
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FF5D59FB414AFF5570FF1728FF1825FF1820FF1317FF1616FF1210FF120EFF12
+        0CFF0300DBCDCBF4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFF221FF7474EFE5568FF1723FF1920FF171CFF1616
+        FF1310FF1211FF0803EB827FE5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1C19F3444CFF2937FF
+        1B23FF191CFF1817FF1513FF0C08F64E4DDEFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8F8AFC2E
+        3AFF2638FF1B25FF1D24FF1B1FFF1C1CFF1816FF0D09E9D8D7F8FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBCB8
+        FF545BFF637AFF6279FF5F70FF5F6CFF4952FF4B4FFF4142FF2524FF2624FF13
+        0DEAE0DFF9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        D7D5FF797CFF6A7EFF6C85FF687EFF6378FF6172FF5D6AFF6972FF9A9CFFA7A8
+        FF6F6CFF5853FF5B56FF4F48F7C8C7F4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF9895FF6F83FF7894FF738DFF6F85FF6C81FF667BFF6373FF7D8AFF
+        8485FC615AF05B54EF9F9DFF8F8DFF5B55FF5B52FF514BF8ACA9EDFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFABA7FF7D94FF809CFF7B94FF7790FF7389FF6F84FF66
+        7CFF95A3FF8989FC6560F4FFFFFFD9D8FB5751EC807DF7AAA6FF7770FF5C56FF
+        5754FF7A77E7FFFFFFFFFFFFFFFFFFFFFFFF7175FF89A5FF839EFF7F98FF7C94
+        FF768BFF788DFFA1B0FF7978FA8C87F7FEFEFFFFFFFFFFFFFFFFFFFF7D7BEC69
+        65ED9A98FEA7A0FF7D7BFF6060FF5757ECB8B7EBFFFFFFFFFFFF9093FF9EB6FF
+        839FFF8098FF7D95FF95A5FFA9B3FF706CFBB2AEFBFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFD7D5F96B67E47873EDA19BFDAAACFF979DFF7680FB7276E8E5
+        E5F87973FFB1BDFFBCCDFFB4C5FFBDCBFF979CFD706AFCD9D7FEFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBCB9F26C69DF6C68E28C8D
+        F29FA7FAC5D3FF797EE6E7E6FF837CFF7D78FF827FFF6D67FE938EFEFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFE3E2F9A3A1E87675DA7674D88282D8FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      ParentFont = False
+      OnClick = btnBtnHapusClick
+    end
+    object btnsave: TSpeedButton
+      Left = 235
+      Top = 12
+      Width = 86
+      Height = 30
+      Hint = 'Hapus'
+      Caption = '&Simpan'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      Glyph.Data = {
+        F6060000424DF606000000000000360000002800000018000000180000000100
+        180000000000C006000000000000000000000000000000000000AF611CAB5916
+        AB5916AF611CB26E2DB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B
+        2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB26E2DAF611CAC5B18AB5915AC
+        5B18AF611CEEC86DE59A147F8495DCE0E4D6D9DED6D9DED6D9DED6D9DED6D9DE
+        D6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DEDCE0E47F84
+        95E69D19DE9A22AC5B18BC7228ECC979E39916908F9DDEDDDCDBDAD8DEDCDBDE
+        DEDCDFDEDDE0DFDDE0E0DEE1E0DFE2E1DFE2E2E0E3E2E1E4E3E1E5E3E2E5E3E2
+        E1E0DEE0DEDD908F9DE49C1DE0A028B6681CBD762DEECD80E49B1E9594A1E4E5
+        E3AFA4A69A898E91818787777F7F717576676D6D5F6664575F5D4F5655484E4E
+        4249473A433C32395F555BE9E9E89594A1E59E25E2A231BA6B20BF7730EFCF85
+        E59E259999A5E5E6E4E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8
+        E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E69999A5E7A12BE4A738BC
+        6C22C37A31F0D18CE6A32B9F9DAAECEAE9DCDADAD9D8D7DAD6D7D8D7D6D8D5D6
+        D7D4D4D6D4D3D6D2D3D4D2D1D4D1D1D3D1D0D2D0CFD0CDCED3D2D1EDECEA9F9D
+        AAE7A631E5AB3EBE7026C57F35F1D390E7A732A4A2AFF0F0EEB2A8AA97878B8F
+        7F8485757D7D6F7374646B6C5D6362555D5B4D5453464C4C3F47453841392F36
+        62565DF4F5F3A4A2AFE9AA39E6AE46C07327C78335F0D394E9AB38A8A7B4F0F1
+        F0F0F1F0F4F5F3F5F7F5F6F8F6F7F9F7F8F9F8F9FBF8FAFBFAFBFDFAFCFEFCFD
+        FEFDFEFFFDFEFFFDF8F9F8F2F2F1A8A7B4EAAE3EE8B34BC37729C98539F2D598
+        EBAE3EACAAB8F6F5F5F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7
+        F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7ACAAB8ECB143EAB650C6
+        7B2CCB8939F3D79DECB244B2AFBDF9FAF8C7C0C2B3A9ABAEA3A6A79D9FA0999B
+        9B9194968B908F858B898185847A8080737B78707670686D928B8EFDFEFCB2AF
+        BDEDB549EBBA56C87D2ECD8D3DF4D8A0EEB549B6B7C2FAF9F9F7F6F6F9F9F9FA
+        F9F9FAFAFAFBFBFBFCFBFBFCFBFBFCFCFCFDFDFCFEFDFDFEFDFDFEFEFDFEFEFD
+        FBFBFBFAFAFAB6B7C2EEB74FEDBB5BCA8531D09040F3DAA5EEBA50A6A6B5FFFF
+        FFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFE
+        FFFFFEFFFFFEFFFFFEFFFFFFFFFFA6A6B5EFBC56EEBF61CD8833D29442F5DCAA
+        F0BF5CB8926991796B977B67977B65977B65977B65977B65977B65977B65977B
+        65977B65977B65977B65977B65977B65977B6791796BB89269F0C163F0C268CF
+        8A35D49644F6DDACEEBE63F2C367FAC864A58973B8A28AB6A088B6A088B6A088
+        B6A088B6A088B6A088B6A088B6A088B6A088B6A088B8A28AA58973FAC864F2C3
+        67EFC068F1C46CD28F37D69A47F7E0AFEFC367F0C56CF6C867A29EAAD8D8D9D4
+        D3D5D4D3D5D4D3D5D4D3D5D4D3D5D4D3D5D5D4D5D7D6D7D7D7D8D7D7D7D8D9DA
+        A29EABF6C867F0C56CF0C56CF3C970D4933AD99D49F7E1B3F0C66CF0C771F7CA
+        6BACA9B4DBD9D8D8D6D5D8D6D5D8D6D5D8D6D5D8D6D5D8D6D5DBD9D9BAB7B9BA
+        B8BCB9B6BBD1D0D0AFADB5F7CA6BF0C771F0C771F2CC76D8973CDBA04CF8E4B5
+        F1C870F1C975F7CC6FB3AEBAE0DFDEDDDCDBDDDCDBDDDCDBDDDCDBDDDCDBDDDC
+        DBE5E6E7654F3DA68257A57F51938F95B8B5BFF7CC6FF1C975F1C975F3CE7ADA
+        9B3FDEA64EF9E5B8F1CB74F2CD79F7CE73B8B4BFE4E3E2E1E0DFE1E0DFE1E0DF
+        E1E0DFE1E0DFE1E0DFE7E9EBA38052FFD97FFFD67A918F9BC0BDC5F7CE73F2CD
+        79F2CD79F4D17EDC9F42E0A951FAE4BAF3CD79F4CE7DF9D077BCB9C4E8E7E6E5
+        E4E3E5E4E3E5E4E3E5E4E3E5E4E3E5E4E3EBECF09F7E54FBD580FDD47A96949C
+        C3C0CBF9D077F4CE7DF4CE7DF6D382DFA144E2AB52FBE7BCF4D17DF5D281F9D3
+        7BC2BEC9ECECEBE9E9E8E9E9E8E9E9E8E9E9E8E9E9E8E9E9E8EFF2F5A28156FF
+        DB86FFDA819996A0C9C5D0F9D37BF5D281F5D282F8D98BE0A243E4AF54F9E8BE
+        F4D37DF5D483F8D47DC8C5CDF0F0EFEDEDECEDEDECEDEDECEDEDECEDEDECEDED
+        ECF5F7F983694ADCB871DAB36A9E9BA1CCCAD4F8D47DF5D584F7D98BE7B453E4
+        AB5AE6B359FBEED1F6D98DF5D480F9D57CCBC8D0F4F4F3F1F1F0F1F1F0F1F1F0
+        F1F1F0F1F1F0F1F1F0F7F8F69D9AA0A09EA59C9AA1D5D3D4CECBD3F9D67CF8DA
+        8DE8B656E5AB51FFFFFFE6AC49FBEDCCFCEED2FBE9C0FFEBBDDBDDEBFBFFFFF9
+        FDFFF9FDFFF9FDFFF9FDFFF9FDFFF9FDFFFAFEFFFFFFFFFFFFFFFFFFFFFFFFFF
+        DBDEECFFEDC5ECBE66E6AE52FFFFFFFFFFFFE5A942E7B14CEBBB5CEBBA5CEBBB
+        5BE7BB69E7BB69EABF6BEABE6BEABE6BEABE6BEABE6BEABE6BEABE6BEABE6BEA
+        BE6BEABF6BE7BB69E0AF5DEAB853EAB65EFFFFFFFFFFFFFFFFFF}
+      ParentFont = False
+      OnClick = btnsaveClick
+    end
+    object PnOperasi: TPanel
+      Left = 624
+      Top = 13
+      Width = 134
+      Height = 22
+      Color = clMoneyGreen
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object pgc1: TPageControl
+    Left = 776
+    Top = 8
+    Width = 385
+    Height = 521
+    ActivePage = ts1
+    TabOrder = 4
+    object ts1: TTabSheet
+      Caption = 'ts1'
+    end
+  end
+  object tmr1: TTimer
+    OnTimer = tmr1Timer
+    Left = 896
+    Top = 165
+  end
+  object ds1: TMyDataSource
+    Left = 896
+    Top = 13
+  end
+  object ds5: TMyDataSource
+    Left = 888
+    Top = 253
+  end
+  object ds3: TMyDataSource
+    Left = 896
+    Top = 109
+  end
+  object ds2: TMyDataSource
+    Left = 896
+    Top = 61
+  end
+  object ds4: TMyDataSource
+    Left = 896
+    Top = 213
+  end
+  object ds6: TMyDataSource
+    Left = 675
+    Top = 78
+  end
+  object QCari: TMyQuery
+    Connection = DmModul.con1
+    Left = 640
+    Top = 80
+  end
+end

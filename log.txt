@@ -1,0 +1,6 @@
+Log started
+Before Connect
+After Connect
+Before Disconnect
+After Disconnect
+Log ended
