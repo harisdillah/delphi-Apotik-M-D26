@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, StdCtrls,jpeg,uDBXls,DBTables, DBAccess, MyAccess,
+  Dialogs, ExtCtrls, StdCtrls,jpeg,uDBXls, DBAccess, MyAccess,
   MemDS, Buttons, ComCtrls, Grids, BaseGrid, AdvGrid,DB, ADODB,
   ekbasereport, ekrtf, cxGraphics, cxControls, cxLookAndFeels,
   cxLookAndFeelPainters, cxContainer, cxEdit, dxSkinsCore,
@@ -16,8 +16,8 @@ uses
   dxSkinOffice2007Blue, dxSkinOffice2007Pink, dxSkinOffice2007Silver,
     dxSkinPumpkin, dxSkinSeven, dxSkinSharp, dxSkinSilver, dxSkinSpringTime,
   dxSkinStardust, dxSkinSummer2008, dxSkinsDefaultPainters,
-  dxSkinValentine, dxSkinXmas2008Blue, EditBtn, EXLReportExcelTLB,
-  EXLReportBand, EXLReport, cxDropDownEdit, cxLookupEdit, cxDBLookupEdit,
+  dxSkinValentine, dxSkinXmas2008Blue, EditBtn,
+  cxDropDownEdit, cxLookupEdit, cxDBLookupEdit,
   cxDBLookupComboBox, AdvObj,nuest, AdvUtil, cxCheckBox,ShellAPI;
 
 type
@@ -38,7 +38,6 @@ type
     BitBtn8: TBitBtn;
     dlgOpen1: TOpenDialog;
     lbl1: TLabel;
-    exlrprt1: TEXLReport;
     ds1: TDataSource;
     mycmnd1: TMyCommand;
     ds2: TMyDataSource;
@@ -401,7 +400,7 @@ begin
 
  FCarisp2:=TFCarisp2.Create(Application);
  FCarisp2.Label4.Caption :='sp_cari_pesanan_SP';
- FCarisp2.EGudang.Text := FMenu.StatusBar1.Panels[1].Text;
+ FCarisp2.EGudang.Text := FMenu.dxStatusBar1.Panels[1].Text;
   LsvSetCol('No|Pelaksana|tgl|no. sp.|Jenis|total|',
   '150|350|100|120|170|120|',FCarisp2.LsCari);
   FCarisp2.LsField.Items.Clear;
@@ -539,7 +538,7 @@ begin
   q_jns.Connection := DmModul.con1;
   q_jns.Active := false;
   q_jns.SQL.Clear;
-  q_jns.SQL.Text := 'Select * from m_jenis where ak =' + QuotedStr(''+FMenu.StatusBar1.Panels[1].Text+'')+
+  q_jns.SQL.Text := 'Select * from m_jenis where ak =' + QuotedStr(''+FMenu.dxStatusBar1.Panels[1].Text+'')+
    ' order by U_jenis';
   q_jns.Open;
     if q_jns.RecordCount > 0 then
@@ -565,7 +564,7 @@ begin
   q_jns2.Connection := DmModul.con1;
   q_jns2.Active := false;
   q_jns2.SQL.Clear;
-  q_jns2.SQL.Text := 'Select * from m_jenis where ak =' + QuotedStr(''+FMenu.StatusBar1.Panels[1].Text+'')+
+  q_jns2.SQL.Text := 'Select * from m_jenis where ak =' + QuotedStr(''+FMenu.dxStatusBar1.Panels[1].Text+'')+
    ' order by U_jenis';
   q_jns2.Open;
     if q_jns2.RecordCount > 0 then
@@ -1315,7 +1314,7 @@ begin
 
       // SP andi
 
-              if FMenu.StatusBar1.Panels[1].Text = 'bm01' then
+              if FMenu.dxStatusBar1.Panels[1].Text = 'bm01' then
               begin
                 lblProses.Caption := 'SP BM ...';
         infile:=apDirrtf+'\Pesanan\'+'07.rtf';
@@ -2423,7 +2422,7 @@ var
 begin
 FCarisp2:=TFCarisp2.Create(Application);
  FCarisp2.Label4.Caption :='sp_cari_pesanan_SP';
- FCarisp2.EGudang.Text := FMenu.StatusBar1.Panels[1].Text;
+ FCarisp2.EGudang.Text := FMenu.dxStatusBar1.Panels[1].Text;
   LsvSetCol('No|Pelaksana|tgl|no. sp.|Jenis|total|',
   '150|350|100|120|170|120|',FCarisp2.LsCari);
   FCarisp2.LsField.Items.Clear;
@@ -2666,7 +2665,7 @@ begin
 
   tgl1xls := FormatDateTime('yyyy-mm-dd',dtp1.date);
   tgl2xls := FormatDateTime('yyyy-mm-dd',dtp2.date);
-  ht1xls2:='http://'+FMenu.StatusBar1.Panels[2].Text+'/cetak_delphi/cetak/laporan_POjns_XLS.php?tgl1='+tgl1xls+'&tgl2='+tgl2xls+'&cari='+datajenis;
+  ht1xls2:='http://'+FMenu.dxStatusBar1.Panels[2].Text+'/cetak_delphi/cetak/laporan_POjns_XLS.php?tgl1='+tgl1xls+'&tgl2='+tgl2xls+'&cari='+datajenis;
   ShellExecute(Handle,'open',PChar(ht1xls2),'','',SW_NORMAL);
 //TampilDataJenis;
 
@@ -3082,7 +3081,7 @@ Procedure Tfrm_pesanan.TampilDatacariTanggal;
     spdata.PrepareSQL;
     spdata.ParamByName('dtgl1').AsString := FormatDateTime('yyyy-mm-dd',dtp1.date); //key ba
     spdata.ParamByName('dtgl2').AsString  := FormatDateTime('yyyy-mm-dd',dtp2.date); //key ba
-    spdata.ParamByName('carijns').AsString := FMenu.StatusBar1.Panels[1].Text;
+    spdata.ParamByName('carijns').AsString := FMenu.dxStatusBar1.Panels[1].Text;
     //spdata.ParamByName('cari').AsString := cbb_carijenis.EditValue ;
     spdata.Open;
 

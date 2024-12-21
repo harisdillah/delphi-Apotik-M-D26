@@ -48,7 +48,8 @@ uses
   UncekSQL in 'UncekSQL.pas' {FrmCekSQL},
   UnOpname in 'UnOpname.pas' {FrmOpname},
   UnReturKonsiyansi in 'UnReturKonsiyansi.pas' {FrmReturKonsiyansi},
-  Un_ganti_barang in 'Un_ganti_barang.pas' {frm_ganti_brg};
+  Un_ganti_barang in 'Un_ganti_barang.pas' {frm_ganti_brg},
+  Un_pesanan in 'Un_pesanan.pas' {frm_pesanan};
 
 {$R *.res}
 

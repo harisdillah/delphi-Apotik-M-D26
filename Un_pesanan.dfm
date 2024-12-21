@@ -307,7 +307,6 @@ object frm_pesanan: Tfrm_pesanan
       Width = 78
       Height = 22
       Caption = '&Export xls'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         18000000000000030000120B0000120B00000000000000000000FF00FFFF00FF
@@ -335,7 +334,6 @@ object frm_pesanan: Tfrm_pesanan
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAFAFEB88384EBB87AD09877FF00FFFF00
         FFFF00FFFF00FFFF00FFDBA685DBA685DBA685DBA685DBA685DBA685DBA685DB
         A685B88384CA9784FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
-      ParentDoubleBuffered = False
       TabOrder = 0
       OnClick = BitBtn8Click
     end
@@ -358,7 +356,7 @@ object frm_pesanan: Tfrm_pesanan
     Top = 0
     Width = 773
     Height = 713
-    ActivePage = ts2
+    ActivePage = ts1
     TabOrder = 2
     object ts1: TTabSheet
       Caption = 'Input'
@@ -850,7 +848,7 @@ object frm_pesanan: Tfrm_pesanan
           SortSettings.HeaderColorTo = clWhite
           SortSettings.HeaderMirrorColor = clWhite
           SortSettings.HeaderMirrorColorTo = clWhite
-          Version = '8.6.0.0'
+          Version = '8.5.0.1'
           RowHeights = (
             22
             22
@@ -1130,8 +1128,8 @@ object frm_pesanan: Tfrm_pesanan
               Top = 28
               Width = 108
               Height = 22
-              Date = 42032.704935729170000000
-              Time = 42032.704935729170000000
+              Date = 42032.000000000000000000
+              Time = 0.704935729168937500
               TabOrder = 1
             end
             object ed_cvnm: TEdit
@@ -1565,7 +1563,6 @@ object frm_pesanan: Tfrm_pesanan
           Width = 99
           Height = 25
           Caption = 'Kwitansi BA'
-          DoubleBuffered = True
           Glyph.Data = {
             36030000424D3603000000000000360000002800000010000000100000000100
             1800000000000003000000000000000000000000000000000000FFFFFFFFFFFF
@@ -1593,7 +1590,6 @@ object frm_pesanan: Tfrm_pesanan
             FFFFFFFFFFFFE2D6C1F8F3EAF8F3EAF8F3EAF8F3EAF8F3EAF8F3EAE2D6C1FFFF
             FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7DDCDEFE8DBEFE8DBEF
             E8DBEFE8DBEFE8DBEFE8DBE8DFD0FFFFFFFFFFFFFFFFFFFFFFFF}
-          ParentDoubleBuffered = False
           TabOrder = 2
           Visible = False
           OnClick = BitBtn17Click
@@ -1604,7 +1600,6 @@ object frm_pesanan: Tfrm_pesanan
           Width = 99
           Height = 23
           Caption = 'Samakan'
-          DoubleBuffered = True
           Glyph.Data = {
             36030000424D3603000000000000360000002800000010000000100000000100
             18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -1632,7 +1627,6 @@ object frm_pesanan: Tfrm_pesanan
             FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6BB4D8047FBDB2EBF6B2EBF6047F
             BD6BB4D8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
             FFFFFFFFFF6BB4D8047FBD047FBD6BB4D8FFFFFFFFFFFFFFFFFF}
-          ParentDoubleBuffered = False
           TabOrder = 3
           OnClick = btnsamaClick
         end
@@ -1642,7 +1636,6 @@ object frm_pesanan: Tfrm_pesanan
           Width = 120
           Height = 25
           Caption = 'BA. Pemeliharaan'
-          DoubleBuffered = True
           Glyph.Data = {
             36030000424D3603000000000000360000002800000010000000100000000100
             1800000000000003000000000000000000000000000000000000FFFFFFFFFFFF
@@ -1670,7 +1663,6 @@ object frm_pesanan: Tfrm_pesanan
             FFFFFFFFFFFFE2D6C1F8F3EAF8F3EAF8F3EAF8F3EAF8F3EAF8F3EAE2D6C1FFFF
             FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7DDCDEFE8DBEFE8DBEF
             E8DBEFE8DBEFE8DBEFE8DBE8DFD0FFFFFFFFFFFFFFFFFFFFFFFF}
-          ParentDoubleBuffered = False
           TabOrder = 4
           Visible = False
           OnClick = BitBtn2Click
@@ -1681,7 +1673,6 @@ object frm_pesanan: Tfrm_pesanan
           Width = 99
           Height = 25
           Caption = 'Kwitansi Nota'
-          DoubleBuffered = True
           Glyph.Data = {
             36030000424D3603000000000000360000002800000010000000100000000100
             1800000000000003000000000000000000000000000000000000FFFFFFFFFFFF
@@ -1709,7 +1700,6 @@ object frm_pesanan: Tfrm_pesanan
             FFFFFFFFFFFFE2D6C1F8F3EAF8F3EAF8F3EAF8F3EAF8F3EAF8F3EAE2D6C1FFFF
             FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7DDCDEFE8DBEFE8DBEF
             E8DBEFE8DBEFE8DBEFE8DBE8DFD0FFFFFFFFFFFFFFFFFFFFFFFF}
-          ParentDoubleBuffered = False
           TabOrder = 5
           Visible = False
           OnClick = BitBtn3Click
@@ -1788,8 +1778,8 @@ object frm_pesanan: Tfrm_pesanan
         Top = 5
         Width = 108
         Height = 22
-        Date = 42032.704935729170000000
-        Time = 42032.704935729170000000
+        Date = 42032.000000000000000000
+        Time = 0.704935729168937500
         TabOrder = 0
       end
     end
@@ -1832,8 +1822,8 @@ object frm_pesanan: Tfrm_pesanan
       Top = 10
       Width = 133
       Height = 28
-      Date = 44511.628642106480000000
-      Time = 44511.628642106480000000
+      Date = 44511.000000000000000000
+      Time = 0.628642106479674100
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clRed
       Font.Height = -16
@@ -1860,8 +1850,8 @@ object frm_pesanan: Tfrm_pesanan
       Top = 10
       Width = 133
       Height = 28
-      Date = 44511.628642106480000000
-      Time = 44511.628642106480000000
+      Date = 44511.000000000000000000
+      Time = 0.628642106479674100
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clRed
       Font.Height = -16
@@ -1877,7 +1867,6 @@ object frm_pesanan: Tfrm_pesanan
       Height = 27
       Cursor = crHandPoint
       Caption = 'Cari tgl'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         1800000000000003000000000000000000000000000000000000FFFFFFFFFFFF
@@ -1905,7 +1894,6 @@ object frm_pesanan: Tfrm_pesanan
         BE9A8DE6C7A5EFCBA3ECC8A2E8BE94DCAA86BE9585DFD6D7FFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE9E4E6C9B3B4B99C93C3A097BF9F96CC
         B9B7F1EEEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-      ParentDoubleBuffered = False
       TabOrder = 4
       OnClick = btcariClick
     end
@@ -1936,7 +1924,6 @@ object frm_pesanan: Tfrm_pesanan
       Height = 26
       Cursor = crHandPoint
       Caption = 'Cari Nomor'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         1800000000000003000000000000000000000000000000000000D6B6A1AF6727
@@ -1964,7 +1951,6 @@ object frm_pesanan: Tfrm_pesanan
         E7B85FFAECB8F8E29BF8E29EF8E29EF8E29EF8E29EF8E29EF8E29DF9E7A5F5DA
         8EDA931CDC9A25E9BC63FFFFFFFFFFFFF2D8A5EFC976EFCB78EFCB78EFCB78EF
         CB78EFCB78EFCB78EFCB77EFCD7AF0CB77E7AE42E8B75AF4DEB0}
-      ParentDoubleBuffered = False
       TabOrder = 7
       OnClick = BitBtn1Click
     end
@@ -1995,7 +1981,6 @@ object frm_pesanan: Tfrm_pesanan
       Caption = 'Filter Nama Supp.'
       TabOrder = 10
       OnClick = cxCheckBoxfilterClick
-      Width = 110
     end
     object edcaridata: TEdit
       Left = 272
@@ -2137,7 +2122,7 @@ object frm_pesanan: Tfrm_pesanan
       SortSettings.HeaderColorTo = clWhite
       SortSettings.HeaderMirrorColor = clWhite
       SortSettings.HeaderMirrorColorTo = clWhite
-      Version = '8.6.0.0'
+      Version = '8.5.0.1'
       RowHeights = (
         22
         22
@@ -2156,7 +2141,6 @@ object frm_pesanan: Tfrm_pesanan
       Width = 108
       Height = 26
       Caption = '&Export xls'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         18000000000000030000120B0000120B00000000000000000000FF00FFFF00FF
@@ -2184,7 +2168,6 @@ object frm_pesanan: Tfrm_pesanan
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAFAFEB88384EBB87AD09877FF00FFFF00
         FFFF00FFFF00FFFF00FFDBA685DBA685DBA685DBA685DBA685DBA685DBA685DB
         A685B88384CA9784FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
-      ParentDoubleBuffered = False
       TabOrder = 13
       OnClick = BitBtn4Click
     end
@@ -2194,7 +2177,6 @@ object frm_pesanan: Tfrm_pesanan
       Width = 108
       Height = 24
       Caption = '&Export xls'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         18000000000000030000120B0000120B00000000000000000000FF00FFFF00FF
@@ -2222,7 +2204,6 @@ object frm_pesanan: Tfrm_pesanan
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAFAFEB88384EBB87AD09877FF00FFFF00
         FFFF00FFFF00FFFF00FFDBA685DBA685DBA685DBA685DBA685DBA685DBA685DB
         A685B88384CA9784FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
-      ParentDoubleBuffered = False
       TabOrder = 14
       OnClick = BitBtn5Click
     end
@@ -2231,6 +2212,7 @@ object frm_pesanan: Tfrm_pesanan
     OutFile = 'outfile.doc'
     TrueValue = 'True'
     FalseValue = 'False'
+    UnicodeByDefault = False
     Charset = DEFAULT_CHARSET
     Lang = 0
     Options = [eoGraphicsBinary, eoDotAsColon]
@@ -2251,6 +2233,7 @@ object frm_pesanan: Tfrm_pesanan
     OutFile = 'outfile.doc'
     TrueValue = 'True'
     FalseValue = 'False'
+    UnicodeByDefault = False
     Charset = DEFAULT_CHARSET
     Lang = 0
     Options = [eoGraphicsBinary, eoDotAsColon]
@@ -2270,13 +2253,6 @@ object frm_pesanan: Tfrm_pesanan
   object dlgOpen1: TOpenDialog
     Left = 803
     Top = 312
-  end
-  object exlrprt1: TEXLReport
-    About = 'EMS Advanced Excel Report(tm) Component Suite for Delphi(R)'
-    Dictionary = <>
-    _Version = '1.40'
-    Left = 808
-    Top = 360
   end
   object ds1: TDataSource
     Left = 800
