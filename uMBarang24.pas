@@ -104,12 +104,10 @@ type
     lbl1: TLabel;
     Edmargin: TEdit;
     cxLabel5: TcxLabel;
-    dtpTglStok: TDateTimePicker;
     mySPcari: TMyStoredProc;
     dscari: TMyDataSource;
     crdbgrd1: TCRDBGrid;
     lbl2: TLabel;
-    lbl3: TLabel;
     Pn_Editbrg: TPanel;
     Label12: TLabel;
     cxUpdatestok: TcxTextEdit;
@@ -121,6 +119,8 @@ type
     cxKodeBarang: TcxTextEdit;
     cxStok: TcxLabel;
     memostok: TMemo;
+    dtpTglStok: TDateTimePicker;
+    cxstokSekarang: TcxTextEdit;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
@@ -209,6 +209,8 @@ type
     procedure KosongTex(Kunci: Boolean);
     Procedure Tampil_combo_Rak;
     Procedure cbo_satuanjual;
+    procedure DisplaySettings;
+
   public
     { Public declarations }
     //procedure combo_sat;
@@ -338,15 +340,25 @@ FrmBrg24:=nil;
 end;
 
 procedure TFrmBrg24.FormShow(Sender: TObject);
+   var Qsetting : TMyQuery;
+
 begin
 //TabSheet2.Show;
 //tampilTab(PageControl1,False);
 pkontrolClick(Sender);
 EdCarinama.SetFocus;
 PnOperasi.Caption := 'Tambah Data';
+DisplaySettings;
+
 
 
 end;
+
+
+
+
+
+
 
 procedure TFrmBrg24.SpeedButton1Click(Sender: TObject);
 begin
@@ -482,6 +494,17 @@ if btsimpan.Caption='Simpan' then
              QuotedStr(edStokAwal.Text)+','+
              //QuotedStr(RealFormat(StrToFloat(Grid1.Cells[4,i1])))+','+// jumlah 0,00
              QuotedStr(btn_satuan.Text)+')');
+// Tambah detail opname Harian
+  proses('INSERT INTO detail_opname_harian (tgl_opname_hr,tgl_create,kode_brg,nama,jml_opname_hr,satuan)'+
+             ' Values('+
+             QuotedStr(tglawal)+','+
+             QuotedStr(FormatDateTime('yyyy/mm/dd hh:nn:ss',now))+','+
+             QuotedStr(EKodeBrg.Text)+','+
+             QuotedStr(eNamaBarang.Text)+','+
+             QuotedStr('0')+','+
+             QuotedStr(btn_satuan.Text)+')');
+
+
   ShowMessage('Data Tambah berhasil : '+ENamaBarang.Text);
   KosongTex(True);
   BitBtn3Click(Sender);
@@ -1008,15 +1031,12 @@ Tampilikon(btreset,'BG\refresh.bmp');
   dtpTglAwal.Checked := false;
   dtpTglAwal.Color := clred;
   dtptglbrgawal.date:= now;
-  dtpTglStok.date:= now;
+  //dtpTglStok.date:= now;
 
-  //kanan(eHrgBeli.Text);
-  //kanan(EHrgJual.text);
-  //EdCarinama.SetFocus;
-  //AdvSmoothPanel1.SetComponentStyle(fMenu.ComboBox1.Text);
-  //AdvSmoothPanel1.SetComponentStyle(tsOffice2003Blue);
+
   AdvSmoothPanel1.SetComponentStyle(tsWindows8);
-  //EGudang.Text:=FMenu.dxStatusBar1.Panels[2].Text;
+
+  
 
 end;
 
@@ -1044,7 +1064,7 @@ end;
 
 procedure TFrmBrg24.EdCarinamaClick(Sender: TObject);
 begin
-EdCarinama.Text:='';
+//EdCarinama.Text:='';
 end;
 
 procedure TFrmBrg24.CRDBGrid1KeyPress(Sender: TObject; var Key: Char);
@@ -1133,6 +1153,7 @@ begin
   cxKodeBarang.Text := mySPcari['kd_obat'];
   cxNamaBarang.Text := mySPcari['nm_obat'];
   cxStok.Caption := mySPcari['Stok'];
+  cxstokSekarang.Text := mySPcari['Stok'];
 
 memostok.Clear;
 memostok.Lines.Add('Opname :' + mySPcari.FieldByName('jml_fisik').AsString);
@@ -1455,18 +1476,19 @@ end;
 procedure TFrmBrg24.btnsaveClick(Sender: TObject);
 begin
 
-if MessageDlg('Update Stok Opname'+#13+#10+cxNamaBarang.Text+#13+#10+
+if MessageDlg('Update Stok Opname Harian'+#13+#10+cxNamaBarang.Text+#13+#10+
         'akan di edit Stok, lanjutkan?',
         mtWarning, [mbOK, mbCancel], 0) = mrOK then
 begin
   //if cekKosong(cxUpdatestok,'Update Stok Blm di isi ')=true then exit;
 
-  proses('update detail_opname set '+
-    'jml_opname='+QuotedStr(cxUpdatestok.Text)+
-   ' where kode_brg='+QuotedStr(cxKodeBarang.Text) );
+  proses('update detail_opname_harian set '+
+    'jml_opname_hr='+QuotedStr(cxUpdatestok.Text)+','+
+    'tgl_opname_hr = '+ QuotedStr(FormatDateTime('yyyy/mm/dd',now))+
+    'where kode_brg='+QuotedStr(cxKodeBarang.Text) );
   Pn_Editbrg.Visible:=False;
-  ShowMessage('Update Stok berhasil : '+cxNamaBarang.Text);
-  BitBtn3Click(Sender);
+  ShowMessage('Update Stok Harian berhasil : '+cxNamaBarang.Text);
+  //BitBtn3Click(Sender);
 
 end;
 end;
@@ -1642,4 +1664,28 @@ begin
   //  q2.Free;
   end;
   end;
+
+  procedure TFrmBrg24.DisplaySettings;
+var
+  Qsetting: TMyQuery;
+begin
+  Qsetting := TMyQuery.Create(nil);
+  try
+    Qsetting.Connection := DmModul.con1;
+    Qsetting.Active := False;
+    Qsetting.SQL.Clear;
+    Qsetting.SQL.Text := 'SELECT * FROM setting_tanggal WHERE aktif = 1';
+    Qsetting.Open;
+
+    if not Qsetting.Eof then
+    //dxStatusBar1.Panels[6].Text:=formatdatetime('yyyy-mm-dd',Qsetting.FieldByName('tgl_awal').AsDateTime);
+    dtpTglStok.Date := Qsetting.FieldByName('tgl_awal').AsDateTime;
+  finally
+    Qsetting.Close;
+    Qsetting.Free;
+  end;
+end;
+
+
+
 end.

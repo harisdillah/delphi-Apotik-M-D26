@@ -174,6 +174,7 @@ type
  //   procedure kodeExit(Sender: TObject);
  function IsFormOpen(const FormName : string): Boolean;
  procedure MenuNonAktif;
+
 //  procedure MenuAktif;
 //  procedure MenuNonAktif;
   end;
@@ -381,6 +382,7 @@ windowstate:=wsmaximized;
   end;
    }
   Caption := apNamaAplikasi;
+
   //lbl1.Text := 'RSU. Karsa Husada';
   //lbl2.Text := 'Program Pengadaan (DPPA)';
   //lbl2.Font.Size := 12;
@@ -462,7 +464,7 @@ begin
     //FMenu.Height := 800;
     //FMenu.Width := 1280;
     img1.Align:=alClient;
-    f:=TIniFile.Create(ExtractFilePath(Application.ExeName)+'\gmbr.ini');
+    f:=TIniFile.Create(ExtractFilePath(Application.ExeName)+'\bin\gmbr.ini');
     n:=f.ReadString('lokasi','file','');
     img1.Picture.LoadFromFile(n);
   except
@@ -784,7 +786,7 @@ Begin
               mtWarning, [mbOK, mbCancel], 0) = mrOK then
                 begin
               //----simpan gambar update---//
-              f:=TIniFile.Create(ExtractFilePath(Application.ExeName)+'\gmbr.ini');
+              f:=TIniFile.Create(ExtractFilePath(Application.ExeName)+'\bin\gmbr.ini');
               f.WriteString('lokasi','file',dlgOpen2.FileName);
               f.UpdateFile;
               f.Free;
@@ -1361,5 +1363,9 @@ begin
 //     frmDokter:=TfrmDokter.Create(Application);
 //     frmDokter.Show;
 end;
+
+
+
+
 
 end.

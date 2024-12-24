@@ -3060,6 +3060,9 @@ object FMenu: TFMenu
       end
       item
         PanelStyleClassName = 'TdxStatusBarTextPanelStyle'
+      end
+      item
+        PanelStyleClassName = 'TdxStatusBarTextPanelStyle'
       end>
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText

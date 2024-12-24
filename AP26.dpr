@@ -60,6 +60,5 @@ begin
   Application.CreateForm(TDmModul, DmModul);
   Application.CreateForm(TFCarisp, FCarisp);
   Application.CreateForm(TFrmCekSQL, FrmCekSQL);
-  Application.CreateForm(Tfrm_ganti_brg, frm_ganti_brg);
   Application.Run;
 end.

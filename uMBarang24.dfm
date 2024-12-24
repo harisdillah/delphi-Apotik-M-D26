@@ -1784,13 +1784,6 @@ object FrmBrg24: TFrmBrg24
           Font.Style = []
           ParentFont = False
         end
-        object lbl3: TLabel
-          Left = 560
-          Top = 39
-          Width = 81
-          Height = 16
-          Caption = 'Tanggal Stok'
-        end
         object pcari: TPanel
           Left = 9
           Top = 28
@@ -1865,22 +1858,13 @@ object FrmBrg24: TFrmBrg24
             OnClick = BitBtn3Click
           end
         end
-        object dtpTglStok: TDateTimePicker
-          Left = 647
-          Top = 38
-          Width = 113
-          Height = 24
-          Date = 45639.000000000000000000
-          Time = 0.903290393507632000
-          TabOrder = 1
-        end
         object crdbgrd1: TCRDBGrid
           Left = 3
           Top = 76
           Width = 860
           Height = 457
           PopupMenu = PopupMenu1
-          TabOrder = 2
+          TabOrder = 1
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -13
@@ -1894,7 +1878,7 @@ object FrmBrg24: TFrmBrg24
           Top = 165
           Width = 570
           Height = 196
-          TabOrder = 3
+          TabOrder = 2
           Visible = False
           object Label12: TLabel
             Left = 10
@@ -2015,7 +1999,7 @@ object FrmBrg24: TFrmBrg24
             Top = 65
             ParentFont = False
             Style.BorderColor = clGradientInactiveCaption
-            Style.Color = clBtnHighlight
+            Style.Color = clInfoBk
             Style.Font.Charset = DEFAULT_CHARSET
             Style.Font.Color = clBlack
             Style.Font.Height = -16
@@ -2077,6 +2061,31 @@ object FrmBrg24: TFrmBrg24
               '')
             TabOrder = 4
           end
+          object cxstokSekarang: TcxTextEdit
+            Left = 284
+            Top = 68
+            ParentFont = False
+            Style.BorderColor = clGradientInactiveCaption
+            Style.Color = clBtnHighlight
+            Style.Font.Charset = DEFAULT_CHARSET
+            Style.Font.Color = clBlack
+            Style.Font.Height = -16
+            Style.Font.Name = 'MS Sans Serif'
+            Style.Font.Style = []
+            Style.IsFontAssigned = True
+            TabOrder = 5
+            Width = 62
+          end
+        end
+        object dtpTglStok: TDateTimePicker
+          Left = 651
+          Top = 34
+          Width = 113
+          Height = 24
+          Date = 45639.000000000000000000
+          Time = 0.903290393507632000
+          Enabled = False
+          TabOrder = 3
         end
       end
     end

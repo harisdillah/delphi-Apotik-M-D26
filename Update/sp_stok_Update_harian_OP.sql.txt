@@ -1,0 +1,154 @@
+-- SP_AmbilBarangStok
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_AmbilBarangStok`(
+	IN `cari` VARCHAR(50)
+)
+BEGIN
+SELECT A.kd_obat,ROUND (LENGTH(A.kd_obat)) AS kt,A.nm_obat,A.sat_obat,A.sat_jual,A.hrg_obat,A.nobatch,A.hrgbeli_obat,A.hrg_obat,
+A.idrak,
+-- ,(B.Awal) as StokAwal, 
+Coalesce(B.Jml_fisik,0) as jml_fisik,
+Coalesce(H.jml_titipan,0) as jml_titip,
+Coalesce(C.tambah,0) as jml_tambah,
+Coalesce(D.Keluar,0) as jml_keluar,
+Coalesce(E.Returbeli,0) as jml_rbl,
+Coalesce(F.Returjual,0) as jml_rjual,
+Coalesce(G.Returkonsi,0) as jml_rkonsi,
+Coalesce(I.jml_opname_hr,0) as jml_op_harian,
+-- Stok
+(COALESCE(B.jml_fisik,0)+Coalesce(C.tambah,0)+Coalesce(H.jml_titipan,0)+Coalesce(I.jml_opname_hr,0)) -
+(Coalesce(D.keluar,0) + Coalesce(E.Returbeli,0)+Coalesce(F.Returjual,0)+Coalesce(G.Returkonsi,0)) as Stok
+FROM tbl_dataobat A
+/* Opname */
+LEFT JOIN	 
+-- JUMLAH = jml_opname
+(SELECT kode_brg, Sum(jml_opname) as Jml_fisik FROM detail_opname 
+  WHERE tgl_opname ='2024-10-30' 
+GROUP	BY	kode_brg) B
+ON A.kd_obat=B.kode_brg
+/* Pembelian */
+LEFT JOIN	 
+(SELECT kode_brg, Sum(jumlah) as Tambah FROM detail_pembelian 
+ WHERE tgl_faktur BETWEEN '2024-10-30' AND NOW() 
+GROUP BY	 kode_brg) C
+ON A.kd_obat=C.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(jml_jual) as Keluar FROM detail_penjualan 
+ WHERE tgl_jual BETWEEN '2024-10-30' AND NOW() 
+GROUP BY	kode_brg) D
+ON A.kd_obat=D.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(retur) as Returbeli FROM detail_returbeli
+WHERE tgl_returbeli BETWEEN '2024-10-30' AND NOW() 
+GROUP BY kode_brg) E
+ON A.kd_obat=E.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(retur_jual) as Returjual FROM detail_returjual
+WHERE tgl_returjual BETWEEN '2024-10-30' AND NOW()
+GROUP BY kode_brg) F
+ON A.kd_obat=F.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(retur_konsi) as Returkonsi FROM detail_returkonsinasi 
+WHERE tgl_returkonsi BETWEEN '2024-10-30' AND NOW()
+GROUP BY kode_brg) G
+ON A.kd_obat=G.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(jumlah) as jml_titipan FROM detail_konsinasi 
+WHERE tgl_konsinasi BETWEEN '2024-10-30' AND NOW()
+GROUP BY kode_brg) H
+ON A.kd_obat=H.kode_brg
+
+-- Data Opname Harian
+LEFT JOIN	
+(SELECT	kode_brg, Sum(jml_opname_hr) as jml_opname_hr FROM detail_opname_harian 
+WHERE tgl_opname_hr BETWEEN '2024-10-30' AND NOW()
+GROUP BY kode_brg) I
+ON A.kd_obat=I.kode_brg
+
+
+WHERE A.nm_obat like concat('%',cari,'%') ORDER BY A.nm_obat
+;
+END
+
+
+-- SP_AmbilBarangStokTGL
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_AmbilBarangStokTGL`(
+	IN `dtgl1` DATE,
+	IN `cari` VARCHAR(50)
+)
+BEGIN
+SELECT A.kd_obat,ROUND (LENGTH(A.kd_obat)) AS kt,A.nm_obat,A.sat_obat,A.sat_jual,A.hrg_obat,A.nobatch,A.hrgbeli_obat,
+A.idrak,A.exp_obat,
+-- ,(B.Awal) as StokAwal, 
+Coalesce(B.Jml_fisik,0) as jml_fisik,
+Coalesce(H.jml_titipan,0) as jml_titip,
+Coalesce(C.tambah,0) as jml_tambah,
+Coalesce(D.Keluar,0) as jml_keluar,
+Coalesce(E.Returbeli,0) as jml_rbl,
+Coalesce(F.Returjual,0) as jml_rjual,
+Coalesce(G.Returkonsi,0) as jml_rkonsi,
+Coalesce(I.jml_opname_hr,0) as jml_op_harian,
+-- Stok
+(COALESCE(B.jml_fisik,0)+Coalesce(C.tambah,0)+Coalesce(H.jml_titipan,0)+Coalesce(I.jml_opname_hr,0)) -
+(Coalesce(D.keluar,0) + Coalesce(E.Returbeli,0)+Coalesce(F.Returjual,0)+Coalesce(G.Returkonsi,0)) as Stok
+FROM tbl_dataobat A
+/* Opname */
+LEFT JOIN	 
+-- JUMLAH = jml_opname
+(SELECT kode_brg, Sum(jml_opname) as Jml_fisik FROM detail_opname 
+  WHERE tgl_opname = dtgl1 
+GROUP	BY	kode_brg) B
+ON A.kd_obat=B.kode_brg
+/* Pembelian */
+LEFT JOIN	 
+(SELECT kode_brg, Sum(jumlah) as Tambah FROM detail_pembelian 
+ WHERE tgl_faktur BETWEEN dtgl1 AND NOW() 
+GROUP BY	 kode_brg) C
+ON A.kd_obat=C.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(jml_jual) as Keluar FROM detail_penjualan 
+ WHERE tgl_jual BETWEEN dtgl1 AND NOW() 
+GROUP BY	kode_brg) D
+ON A.kd_obat=D.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(retur) as Returbeli FROM detail_returbeli
+WHERE tgl_returbeli BETWEEN dtgl1 AND NOW() 
+GROUP BY kode_brg) E
+ON A.kd_obat=E.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(retur_jual) as Returjual FROM detail_returjual
+WHERE tgl_returjual BETWEEN dtgl1 AND NOW()
+GROUP BY kode_brg) F
+ON A.kd_obat=F.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(retur_konsi) as Returkonsi FROM detail_returkonsinasi 
+WHERE tgl_returkonsi BETWEEN dtgl1 AND NOW()
+GROUP BY kode_brg) G
+ON A.kd_obat=G.kode_brg
+
+LEFT JOIN	
+(SELECT	kode_brg, Sum(jumlah) as jml_titipan FROM detail_konsinasi 
+WHERE tgl_konsinasi BETWEEN dtgl1 AND NOW()
+GROUP BY kode_brg) H
+ON A.kd_obat=H.kode_brg
+
+
+-- Data Opname Harian
+LEFT JOIN	
+(SELECT	kode_brg, Sum(jml_opname_hr) as jml_opname_hr FROM detail_opname_harian 
+WHERE tgl_opname_hr BETWEEN dtgl1 AND NOW()
+GROUP BY kode_brg) I
+ON A.kd_obat=I.kode_brg
+
+WHERE A.nm_obat like concat('%',cari,'%') 
+ORDER BY A.nm_obat,A.idrak;
+END
