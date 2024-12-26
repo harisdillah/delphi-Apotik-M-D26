@@ -121,6 +121,7 @@ type
     memostok: TMemo;
     dtpTglStok: TDateTimePicker;
     cxstokSekarang: TcxTextEdit;
+    BitBtn8: TBitBtn;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
@@ -199,6 +200,7 @@ type
     procedure crdbgrd1DblClick(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btnsaveClick(Sender: TObject);
+    procedure BitBtn8Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -972,6 +974,16 @@ begin
 if FrmImportMasterBrg=nil then
      FrmImportMasterBrg:=TFrmImportMasterBrg.Create(Application);
      FrmImportMasterBrg.Show;
+end;
+
+procedure TFrmBrg24.BitBtn8Click(Sender: TObject);
+var
+  ht3,kodecari1:string;
+begin
+if mySPcari.RecordCount<=0 then exit;
+  ht3:='http://'+FMenu.dxStatusBar1.Panels[2].Text+'/medika_native/cetak/laba_rugi.php';
+  ShellExecute(Handle,'open',PChar(ht3),'','',SW_NORMAL);
+
 end;
 
 procedure TFrmBrg24.EdCarinamaKeyDown(Sender: TObject; var Key: Word;

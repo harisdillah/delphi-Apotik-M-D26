@@ -8,7 +8,7 @@ procedure apLoadKonfigurasiProgram;
 //procedure apSettingMainForm;
 
 var
-  apNamaAplikasi: string= 'APOTIK-D26.10.3 ver 24.12.24';
+  apNamaAplikasi: string= 'APOTIK-D26.10.3 ver 24.12.26';
   apDirExe, apDirLib,apDirrtf,
   apDirDb, apDirDbImgBooks,
   apdirxls,apdirback,apdirlist,
