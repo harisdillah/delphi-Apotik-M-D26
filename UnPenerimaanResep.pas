@@ -346,6 +346,7 @@ begin
   Aturgrid1;
   //cbbpetugas.l
 
+
 end;
 
 
@@ -570,6 +571,7 @@ Begin
   edkode.Text := '';
   cx_nama_brg.Text := '';
   cbb_satuan.Text := '';
+  EdJasa.text := '0';
   edGrandTotal.Text := '0';
   EdBayar.Text := '0';
   EdKembali.Text := '0';
@@ -814,6 +816,7 @@ Tampil_combo_Dokter;
 KosongTex(True);
 PnOperasi.Caption := 'Tambah Data';
 cxcari.SetFocus;
+
 //redt_Struk.Visible := false;
 end;
 

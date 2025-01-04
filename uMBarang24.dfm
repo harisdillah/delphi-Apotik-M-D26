@@ -2095,6 +2095,8 @@ object FrmBrg24: TFrmBrg24
       ColorTo = clNone
       TabColor = clBtnFace
       TabColorTo = clNone
+      ExplicitLeft = 8
+      ExplicitTop = 23
       object btncaribarang: TSpeedButton
         Left = 256
         Top = 48

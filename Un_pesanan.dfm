@@ -967,7 +967,7 @@ object frm_pesanan: Tfrm_pesanan
       end
       object pgc2: TPageControl
         Left = 3
-        Top = 28
+        Top = 29
         Width = 753
         Height = 187
         ActivePage = ts4
@@ -1155,6 +1155,7 @@ object frm_pesanan: Tfrm_pesanan
                 end>
               Properties.OnButtonClick = cbo_cvPropertiesButtonClick
               Properties.OnChange = cbo_cvPropertiesChange
+              Style.Color = clInactiveCaption
               TabOrder = 3
               Width = 137
             end

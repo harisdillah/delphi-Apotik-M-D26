@@ -882,8 +882,8 @@ object FrmPenerimaanResep: TFrmPenerimaanResep
       Width = 165
     end
     object cbb_satuan: TComboBox
-      Left = 258
-      Top = 54
+      Left = 257
+      Top = 56
       Width = 128
       Height = 24
       Font.Charset = DEFAULT_CHARSET
@@ -911,7 +911,7 @@ object FrmPenerimaanResep: TFrmPenerimaanResep
     end
     object edjml: TEdit
       Left = 10
-      Top = 54
+      Top = 52
       Width = 86
       Height = 28
       Color = clCream
@@ -945,8 +945,8 @@ object FrmPenerimaanResep: TFrmPenerimaanResep
       OnKeyPress = edjmlKeyPress
     end
     object Edtotal: TEdit
-      Left = 545
-      Top = 53
+      Left = 548
+      Top = 52
       Width = 157
       Height = 28
       Color = clCream
@@ -961,8 +961,8 @@ object FrmPenerimaanResep: TFrmPenerimaanResep
       OnKeyPress = edjmlKeyPress
     end
     object EdJasa: TEdit
-      Left = 387
-      Top = 53
+      Left = 386
+      Top = 52
       Width = 157
       Height = 28
       Color = clCream

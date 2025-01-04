@@ -1535,7 +1535,7 @@ var
 begin
 if mySPcari.RecordCount<=0 then exit;
   kodecari2 := mySPcari['kd_obat'];
-  ht2:='http://'+FMenu.dxStatusBar1.Panels[2].Text+'/cetak_apotik/cetak/databarang.php?kode='+kodecari2;
+  ht2:='http://'+FMenu.dxStatusBar1.Panels[2].Text+'/medika_native/cetak/databarang.php?kode='+kodecari2;
   ShellExecute(Handle,'open',PChar(ht2),'','',SW_NORMAL);
 
 
